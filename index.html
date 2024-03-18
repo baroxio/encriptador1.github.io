@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto Alura LATAM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div class="logo">
+        <img src="img/Logo.png" id="img-logo"/>
+      </div>
+
+      <div class="encriptar">
+        
+        <textarea name="texto" class="texto" id="texto" cols="32" rows="9" placeholder="Ingresa el texto aquí"></textarea>
+        
+        <div class="terminos">
+          <img src="img/img_excla.png"  class="img-excla" id="img-excla" />
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+          <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+        </div>
+
+      </div>
+      
+      <div class="encriptado">
+        
+        <div class="area_textareaRes">
+          <textarea name="textareaRes" class="textareaRes" id="textareaRes" rows="9" cols="25"></textarea>
+        </div>
+
+        <div class="area_imagen">
+          <img src="img/muñeco.png" alt="" id="muñeco" />
+        </div>
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+          <button class="btn-copiar" type="button" onclick="copiar()">Copiar</button>
+        </div>
+      </div>
+    
+    </div>
+
+  </body>
+
+  <script src="app.js"></script>
+</html>
